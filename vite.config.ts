@@ -11,10 +11,10 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver()]
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver()]
     }),
     styleImport({
       libs: [
@@ -31,13 +31,13 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, 'src')
-    },
+      '@': resolve(__dirname, 'src')
+    }
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "style/_style.scss";`
+        additionalData: '@import "style/_style.scss";'
       }
     }
   }
